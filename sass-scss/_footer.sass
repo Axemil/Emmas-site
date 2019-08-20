@@ -1,0 +1,112 @@
+@import 'color'
+@import 'font'
+//			  //
+//			  //
+// FOOTER //
+//				//
+//				//
+footer
+	background: $bgBeige1
+	border-top: 1px solid rgba(0,0,0,0.1)
+.list-footer
+	padding: 50px 0 10px 0
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+.list-footer li
+	margin: 5px 0
+	width: 30%
+@media (min-width: 600px)
+	.list-footer li
+		width: 15%
+footer form
+	text-align: center
+	font-family: $roboto
+	width: 80%
+	margin: 60px auto
+footer form label
+	font-size: 25px
+	font-weight: 300
+footer form input
+	background: $bgBeige1
+	margin: 10px 0
+	padding: 5px 0
+	text-align: center
+	width: 100%
+	border: none
+	border-bottom: 1px solid $textDark
+footer form input::placeholder
+	font-size: 13px
+footer form button
+	margin: 10px 0
+	text-decoration: underline
+	border: none
+	background: #ddd
+	width: 100%
+	padding: 5px 0
+	color: $textDark
+	border-radius: 5px
+@media (min-width: 900px)
+	footer form
+		width: 40%
+	footer form button
+		background: #fff
+.list-social-footer
+	padding: 0 0 50px 0
+	display: flex
+	justify-content: center
+.list-social-footer ul
+	display: flex
+	justify-content: center
+.list-social-footer li
+	padding: 10px
+.list-social-footer a
+	font-size: 12px
+	color: $textDark
+	text-transform: uppercase
+.list-contacts-footer
+	padding: 30px 0
+	display: flex
+	flex-wrap: wrap
+.block-contacts-footer
+	margin: 10px 0
+	padding: 0 100px
+	border-top: 1px solid #ddd
+	border-bottom: 1px solid #ddd
+.item-list-contacts
+	padding: 20px
+.item-list-contacts:nth-child(1),
+.item-list-contacts:nth-child(2)
+	width: 25%
+.item-list-contacts
+	font-size: 12px
+.item-list-contacts h4
+	font-family: $roboto
+	padding-bottom: 20px 
+	font-weight: 400
+	text-transform: uppercase
+.item-list-contacts:nth-child(3)
+	width: 50%
+	display: flex
+	justify-content: flex-end
+	align-items: center
+.item-list-contacts:nth-child(3) img
+	width: 30px
+	margin: 5px
+@media(max-width: 700px)
+	.item-list-contacts:nth-child(1),
+	.item-list-contacts:nth-child(2)
+		margin: 10px
+		width: 45%
+.author
+	width: 100%
+	min-width: 350px
+	max-width: 1200px
+	margin: 20px auto
+	display: flex
+	justify-content: space-between
+.author p,.author a
+	font-size: 11px
+	color: $textDark
+.author a:hover
+	color: $typRust

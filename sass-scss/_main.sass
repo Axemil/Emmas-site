@@ -1,0 +1,427 @@
+@import 'color'
+@import 'font'
+//				//
+//				//
+// 	MAIN  //
+//				//	
+//				//
+
+.block-banner
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 60px 0 0 0
+	min-width: 100vw
+	height: 100vh
+	background: url(img/bg-banner.jpg) center center no-repeat
+	background-size: cover
+.slider-banner
+	background: #fff
+	padding: 25px
+	position: absolute
+	width: 320px
+.slider-banner .data a span:first-child
+	text-transform: uppercase
+	color: $typGreen
+.slider-banner .data a span:last-child
+	font-style: italic
+	color: $textDark
+	padding: 0 0 0 10px
+	font-size: 12px
+.slider-banner>a
+	display: block
+	line-height: 1
+	padding: 15px 0
+	font-weight: 300
+	font-size: 45px
+.slider-banner>p
+	font-size: 11px
+.block-news section>p
+	padding: 5px
+.slider
+	padding: 5px 
+	display: flex
+	justify-content: flex-end
+.slider a
+	padding: 5px
+	font-size: 20px
+	color: $typRust
+	border: none
+	background: none
+.block-news
+	padding: 50px 0
+	background: $bgBeige2
+.block-news section>p
+	text-transform: uppercase
+	text-align: right
+	font-size: 12px
+.item-news
+	display: flex
+	justify-content: center
+	align-items: center
+.text-news
+	margin: 10px
+	flex: 2 2 50%
+.text-news>a
+	color: $typRust
+	text-transform: uppercase
+.text-news h2
+	display: block
+	font-family: $roboto
+	text-transform: uppercase
+	padding: 20px 0
+	line-height: 1
+	font-weight: 300
+	font-size: 35px
+.text-news p
+	font-weight: 300
+.item-news>a
+	margin: 50px
+	flex: 1 1 50%
+.sl-R
+	display: flex
+	justify-content: flex-end
+.sl-R a
+	padding: 10px 0
+	color: $typRust
+	font-size: 13px
+.button-about
+	margin: auto
+	text-align: center
+	width: 170px
+	padding: 10px 15px
+	background: $bgGreen3
+.block-food
+	padding: 50px 0
+	background: $bgBeige1
+.list-food
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+.item-food
+	margin: 10px 
+	flex: 1 1 35%
+	min-height: 200px
+.item-food:last-child
+	display: none
+.item-food h2
+	padding: 10px 0
+	text-align: center
+	line-height: 1
+	font-family: $roboto
+	font-size: 17px
+	font-weight: 300
+	text-transform: uppercase
+.sl-alt
+	text-align: center
+.sl-alt a
+	color: $btn1
+	text-transform: uppercase
+.sl-alt i
+	padding: 0 5px
+.block-latest-shop
+	padding: 50px 0
+.block-latest-shop
+	background: $bgGreen1
+.last
+	background: $bgBeige1
+.last h2
+	padding: 60px 0 30px 0
+.block-latest-shop h2
+	font-weight: 300
+	margin: 10px 0
+	font-size: 30px
+	text-align: center
+	text-transform: uppercase
+.list-latest-shop
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.item-latest-shop
+	position: relative
+	padding: 20px
+	margin: 10px
+	flex: 1 1 40%
+.img-shop
+	opacity: 1
+	transition: .5s
+	text-align: center
+.item-latest-shop h4
+	color: $textDark
+	font-size: 20px
+	padding: 10px 0
+	font-weight: 300
+.img-shop p
+	font-size: 11px
+	color: $typTxt
+.text-shop
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	text-align: center
+	position: absolute
+	padding: 20px
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	opacity: 0
+	transition: .5s
+.text-shop p
+	font-size: 11px
+	padding: 0 0 10px 0
+.text-shop span
+	color: $typRust
+	text-transform: uppercase
+	font-size: 12px
+.item-latest-shop:hover .text-shop
+	opacity: 1
+.item-latest-shop:hover .img-shop
+	opacity: 0
+.item-latest-shop:nth-child(2n)
+	background: $bgShop1
+.item-latest-shop:nth-child(2n+1)
+	background: $bgShop2
+.item-latest-shop:nth-child(2n+2)
+	background: $bgShop3
+.item-latest-shop:nth-child(2n+3)
+	background: $bgShop4
+.block-blogs
+	background: $bgBeige1
+.section-blog,
+.aside-blog
+	padding: 25px 10px
+.aside-blog
+	text-align: center
+	background: $bgGreen3
+.aside-blog a
+	color: $typTitle
+	text-transform: uppercase
+.aside-blog>a
+	padding: 20px 0
+	font-size: 27px
+.item-aside-blog
+	margin: 20px 0
+.item-aside-blog h3
+	margin: 15px 0 20px
+	font-size: 16px
+	font-weight: 300
+.video-aside
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+.video-aside i
+	position: absolute
+	font-size: 60px
+	color: #fff
+.section-blog>h2,.section-blog>p
+	text-align: center
+.section-blog>h2
+	padding: 10px 0
+	font-size: 30px
+	text-transform: uppercase
+	font-weight: 300
+.block-podcast
+	padding: 50px 0
+	background: $bgGreen2
+.section-blog>p
+	padding: 0 0 25px 0
+.section-blog .item-news
+	margin: -60px 0
+.item-podcast
+	margin: auto
+	width: 100%
+	display: flex
+	flex-direction: column
+.item-podcast>a, .text-podcast
+	flex: 1 1 50%
+.item-podcast>a
+	margin: 25px
+.text-podcast
+	text-align: center
+.text-podcast h2
+	text-transform: uppercase
+	font-weight: 300
+	font-size: 25px
+	padding: 10px
+.text-podcast p
+	color: $typTxt
+	font-size: 12.5px
+.list-seasons
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 20px 0
+.item-seasons
+	width: 20%
+	display: flex
+	text-align: center
+	justify-content: center
+	align-items: center
+	margin: 5px
+	padding: 10px 20px
+	font-size: 14xpx
+.item-seasons a
+	color: #fff
+.item-seasons:nth-child(1)
+	background: #C6AA9C
+.item-seasons:nth-child(2)
+	background: #879085
+.item-seasons:nth-child(3)
+	background: #3C5865
+.item-seasons:nth-child(4)
+	background: #C6AA9C
+.block-shop-food
+	padding: 50px 0
+	background: $bgGreen1
+.block-shop-food section>p
+	padding: 5px
+	text-transform: uppercase
+	text-align: right
+.list-shop-food
+	display: flex
+	justify-content: center
+.item-shop-food
+	text-align: center
+	flex: 1 1 100%
+	margin: 10px 30px 30px
+.item-shop-food:nth-child(2),
+.item-shop-food:nth-child(3)
+	display: none
+.item-shop-food a:nth-child(1)
+	line-height: 1
+	color: $typRust
+	font-size: 16px
+	padding: 10px 0 0 0
+	text-transform: uppercase
+.item-shop-food a:nth-child(2)
+	line-height: 1
+	padding: 10px
+	font-weight: 300
+	color: $typTitle
+	text-transform: uppercase
+	font-size: 25px
+.item-shop-food p
+	font-size: 12px
+	color: $typTxt
+.block-about-emma
+	background: $bgBeige1
+	padding: 125px 0 30px 0
+.section-emma
+	padding: 0 10px
+	display: flex
+	justify-content: center
+	align-items: center
+.text-emma
+	width: 60%
+.text-emma:first-child
+	padding: 0 50px 0 0
+.text-emma a
+	padding: 10px 0
+	color: $typRust
+.text-emma:last-child
+	padding: 0 0 0 50px
+.text-emma h2
+	padding: 50px 0 20px 0
+	font-weight: 300
+	line-height: 1
+	font-size: 30px
+.text-emma p
+	line-height: 1.4
+	color: $typTxt
+.text-emma h3
+	padding: 75px 0 20px 0
+	font-weight: 300
+	font-size: 25px
+.contact-info
+	font-style: italic
+.contact-info span
+	color: #000
+	font-weight: 500
+	padding: 0 10px 0 0
+.contact-span
+	padding: 10px 0
+.img-emma
+	width: 40%
+.hyper-link
+	display: inline
+.block-seasons-main
+	background: $bgBeige1
+	padding: 100px 0 50px 0
+.list-seasons-main a
+	margin: 10px
+@media(max-width: 600px)
+	.item-news
+		display: block
+	.item-news img
+		width: 90%
+		margin: auto
+	.text-news
+		text-align: center
+	.sl-R,
+	.text-news p
+		display: none
+@media(min-width: 500px)
+	.block-banner
+		justify-content: flex-end
+		align-items: flex-end
+	.slider-banner
+		right: 90px
+		bottom: 90px
+	.list-seasons-main
+		display: flex
+		flex-wrap: wrap
+	.list-seasons-main a
+		flex: 1 1 15%
+@media(max-width: 700px)
+	.section-emma
+		display: block
+	.img-emma
+		width: 100%
+		padding: 10px 0
+	.text-emma:first-child
+		padding: 0 0 0 20px
+@media(min-width: 700px)
+	.item-shop-food:nth-child(2),
+	.item-shop-food:nth-child(3)
+		display: block
+@media(min-width: 900px)
+	.item-food
+		flex: 1 1 15%
+	.item-food:last-child
+		display: block
+	.item-food h2
+		font-size: 20px
+	.text-news h2
+		font-size: 45px
+	.item-latest-shop
+		flex: 1 1 21%
+	.block-blogs
+		padding: 50px 0
+	.block-blogs section
+		display: flex
+	.section-blog
+		flex: 1 1 70%
+		padding: 0 25px 0 0
+	.aside-blog
+		flex: 1 1 30%
+		padding: 25px
+	.video-aside i
+		font-size: 35px
+@media(min-width: 1000px)
+	.item-podcast
+		width: 60%
+		align-items: center
+		flex-direction: row
+	.text-podcast
+		text-align: left
+	.text-podcast h2
+		margin: 0
+		padding: 10px 0
+	.list-seasons
+		justify-content: flex-start
+	.item-seasons
+		margin: 0 10px 0 0

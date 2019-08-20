@@ -1,0 +1,75 @@
+@import 'color'
+@import 'font'
+//				//
+//				//
+// HEADER //
+//				//
+//				//
+header
+	background: $bgBeige3
+	width: 100%
+	display: flex
+	justify-content: space-between
+	padding: 15px 10px
+	min-height: 50px
+	align-items: center
+	position: fixed
+	z-index: 100
+.logo
+	width: 163px
+.half-nav-header
+	width: 100px
+	display: flex
+.half-nav-header nav
+	width: 100%
+	min-height: 58px
+	display: flex
+	align-items: center
+.half-nav-header ul
+	display: flex
+.half-nav-header li
+	text-transform: uppercase
+	padding: 10px
+	margin: 0 5px 0 0
+.half-nav-header a
+	font-size: 11px
+	color: $textDark
+.half-nav-header a:hover
+	color: $typRust
+
+.half-nav-header:first-child li:first-child
+	padding: 10px 20px 10px 10px
+	border-right: 1px solid $bgBeige3
+
+.half-nav-header:first-child li:nth-child(2),
+.half-nav-header:first-child li:nth-child(3),
+.half-nav-header:first-child li:nth-child(4),
+.half-nav-header:first-child li:nth-child(5)
+	display: none
+.half-nav-header:last-child li:nth-child(1),
+.half-nav-header:last-child li:nth-child(2),
+.half-nav-header:last-child li:nth-child(3)
+	display: none
+.half-nav-header:last-child nav
+	justify-content: flex-end
+
+.half-nav-header:last-child li:last-child
+	padding: 10px 10px 10px 20px
+	border-left: 1px solid $bgBeige3
+
+@media (min-width: 1000px)
+	.half-nav-header
+		width: 450px
+	.half-nav-header:first-child li:nth-child(2),
+	.half-nav-header:first-child li:nth-child(3),
+	.half-nav-header:first-child li:nth-child(4),
+	.half-nav-header:first-child li:nth-child(5)
+		display: block
+	.half-nav-header:last-child li:nth-child(1),
+	.half-nav-header:last-child li:nth-child(2),
+	.half-nav-header:last-child li:nth-child(3)
+		display: block
+	.half-nav-header:last-child li:last-child
+		border-left: 1px solid $textDark
+	.half-nav-header:first-child li:first-child
+		border-right: 1px solid $textDark

@@ -1,0 +1,61 @@
+@import 'normalize'
+@import 'color'
+@import 'font'
+@import 'header'
+@import 'main'
+@import 'footer'
+*
+	padding: 0 
+	margin: 0
+	box-sizing: border-box
+*::selection
+	background: $typRust
+	color: #fff
+html
+	height: 100%
+.wrapper
+	position: relative
+	height: 100%
+	display: flex
+	flex-direction: column
+header,
+footer
+	flex: 0 0 auto
+main
+	flex: 1 0 auto
+body
+	font-size: 14px
+	line-height: 1.4em
+	letter-spacing: 0.05em
+section
+	margin: 0 auto
+	width: 100%
+	min-width: 375px
+	max-width: 1200px
+a,
+p
+	font-family: $roboto
+a
+	display: block
+	transition: .3s
+	text-decoration: none
+	color: $textDark
+h1,h2,h3,h4,h5,h6
+	font-family: $roboto
+	color: $typTitle
+img
+	display: block
+	width: 100%
+	height auto
+li
+	list-style: none
+a.arrow-up
+	position: fixed
+	right: 20px
+	bottom: 20px
+	color: $typRust
+	font-size: 30px
+@media(min-width:600px)
+	a.arrow-up
+		right: 50px
+		bottom: 50px
